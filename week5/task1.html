@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search our web site!</title>
+    <title>Search Our Web Site</title>
     <style>
-        table {
-            border: 1px solid black;
-            padding: 10px;
+        .form-box {
+            width: 400px;
+            padding: 15px;
+            border: 1px solid #000;
+            margin: 40px auto;
         }
+        h2 {
+            font-weight: normal;
+            margin: 0;
+            margin-top: -5px;
+        }
+        hr {
+            margin: 20px -15px 25px 0;
+        }
+        .form-table {
+            width: 100%;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        .buttons input {
+            width: 60px;
+            margin-right: 10px;
+        }
+        .form-elements {
+            margin-left: 10px;
+        }
+
     </style>
 </head>
 <body>
-
-    <form>
-
-    </form>
-
+    <div class="form-box">
+        <form class="form-elements">
+            <h2>Search our web site!</h2>
+            <hr>
+            <table class="form-table">
+                <tr>
+                    <td colspan="2">Where do you want to search?</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="section" checked></td>
+                    <td><label for="whole">Whole site</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="section"></td>
+                    <td><label for="partners">Business Partners Section</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="section"></td>
+                    <td><label for="communications">Corporate Communications Section</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="section"></td>
+                    <td><label for="education">Lotus Education Section</label></td>
+                </tr>
+                <tr><td colspan="2" style="height: 15px;"></td></tr>
+                <tr>
+                    <td colspan="2">Enter a word or two that we can search on:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="search" size="45"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
